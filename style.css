@@ -1,0 +1,929 @@
+@font-face {
+	font-family: 'Raleway-Regular';
+	src: url(fonts/Raleway-Regular.ttf)
+}
+
+@font-face {
+	font-family: 'Raleway-ExtraBold';
+	src: url(fonts/Raleway-ExtraBold.ttf)
+}
+
+@font-face {
+	font-family: 'Raleway-Bold';
+	src: url(fonts/Raleway-Bold.ttf)
+}
+
+@font-face {
+	font-family: 'Raleway-Heavy';
+	src: url(fonts/Raleway-Heavy.ttf)
+}
+
+@font-face {
+	font-family: 'Roboto-BlackItalic';
+	src: url(fonts/Roboto-BlackItalic.ttf)
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url(fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url(fonts/Roboto-Bold.ttf)
+}
+
+@font-face {
+	font-family: 'Roboto-Black';
+	src: url(fonts/Roboto-Black.ttf)
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	height: 700px;
+	background-color:  #abeafa;
+}
+
+.content {
+	width: 1170px;
+	margin: 0 auto;
+	background-color:  #f8f8f8;
+}
+
+.left_block {
+	float: left;
+	margin: 0 auto;
+	margin-top: -20px;
+}
+
+.brand_box {
+	clear: both;
+	width: 100%;
+	height: 160px;
+	background-color:  #ffffff;
+}
+
+.instagram {
+	width: 100%;
+	height: 350px;
+	background-color:  #eaeaea;
+}
+
+.social_button {
+	width: 100%;
+	height: 150px;
+	background-color: blue;
+}
+
+.footer {
+	width: 100%;
+	height: 348px;
+	background-color:  #373737;
+}
+
+/*Меню*/
+.menu {
+	width: 270px;
+	background-color: #26d2fc;
+	margin-bottom: 30px;
+}
+
+/*Шапка меню*/
+.menu_text {
+	font-family: 'Roboto-Bold', 'arial', sans-serif;
+	background-color: #333333;
+	height: 66px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 74px;
+	text-align: left;
+	padding-left: 43px;
+	text-transform: uppercase;
+}
+
+.menu ul {
+	background-color: #26d2fc;
+}
+
+.menu ul li {
+	list-style-type: none;
+}
+
+.menu ul li a {
+	font-family: 'Roboto-Black', 'arial', sans-serif;
+	padding-left: 40px;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 900;
+	line-height: 37px;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+}
+
+.menu ul li a:hover {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+/*Бокс под меню*/
+.now_is_open {
+	width: 270px;
+	height: 300px;
+	background-color:  #e0e0e0;
+}
+
+.products {
+	width: 870px;
+	height: 100%;
+	float: right;
+	margin-top: -20px;
+	background-color:  #f8f8f8;
+}
+
+
+/*Оформление HEADER*/
+/*Логотип*/
+
+.header__top {
+  width: 100%;
+  height: 240px;
+ }
+
+.header__logo {
+  width: 125px;
+  height: 111px;
+  float: left;
+  background-image: url(img/logo.png);
+  margin-top: 24px;
+  margin-left: 234px;
+}
+
+/*иконки твитер, инст, фейс, ютуб - справа сверху*/
+.header__social {
+  width: 120px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 239px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_socail_icon_fb {
+	width: 8px;
+	height: 16px;
+	background-image: url(img/header_icon/fb_icon.png);
+}
+
+.header_socail_icon_tw {
+	width: 16px;
+	height: 14px;
+	background-image: url(img/header_icon/tw_icon.png);
+}
+
+.header_socail_icon_yt {
+	width: 16px;
+	height: 16px;
+	background-image: url(img/header_icon/youtube_icon.png);
+}
+
+.header_socail_icon_p {
+	width: 14px;
+	height: 16px;
+	background-image: url(img/header_icon/pinterest_icon.png);
+}
+
+.header_socail_icon_ins {
+	width: 16px;
+	height: 16px;
+	background-image: url(img/header_icon/insta_icon.png);
+}
+
+.header__bottom {
+	width: 100%;
+	height: 460px;
+	background-color:  #abeafa;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__welcome {
+  background-color:  #fff51f;
+  width: 270px;
+  height: 300px;
+  margin-left: 165px; 
+  margin-top: 96px; 
+}
+
+.header__deal {
+  width: 315px;
+  height: 280px;
+  margin-right: 274px;
+}
+
+.welcome_to_text {
+	font-family: 'Raleway-Bold', 'arial', sans-serif;
+	color: #333333;
+	display: inline-block;
+	font-size: 30px; 
+	font-weight: 700;
+	line-height: 30px; 
+	text-align: left;
+	margin-top: 82px;
+	margin-left: 25px;
+	text-transform: uppercase;
+}
+
+.The_only_online_text {
+	font-family: 'Raleway-Bold', 'arial', sans-serif;
+	color: #333333;
+	font-size: 18px; 
+	font-weight: 600;
+	line-height: 14px;
+	text-align: left;
+	padding: 24px 30px 82px 22px;
+	font-style: italic;
+}
+
+.JP_funride_text {
+	font-family: 'Raleway-ExtraBold', 'arial', sans-serif;
+	color:  #fff51f;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 34px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.Super_easy_text {
+	font-family: 'Raleway', 'arial', sans-serif;
+	color:  #fff51f;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.buy_button {
+	font-family: 'Raleway-Heavy', 'arial', sans-serif;
+	display: inline-block;
+	color: black;
+	height: 49px;
+	width: 124px;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: yellow;
+	line-height: 49px;
+	margin: 15px 0 0 5px;
+	text-decoration: none;
+	font-weight: 800;
+}
+
+.now_is_text {
+	font-family: 'Raleway-Heavy', 'arial', sans-serif;
+	color: #333333;
+	font-size: 36px; 
+	font-weight: 800;
+	line-height: 36px; 
+	text-align: left;
+	font-style: italic;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 129px 19px 73px 142px;
+}
+
+
+/*Бокс с продуктами*/
+
+.text_new_products {
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color: #707070;
+	font-size: 22px; 
+	font-weight: 900;
+	font-style: italic;
+	text-align: left;
+	text-transform: uppercase;
+	margin-top: 31px;
+	margin-bottom: 31px;
+	margin-left: 25px;
+}
+
+.new_products {
+	width: 870px;
+	height: 724px;
+	background-color:  #f8f8f8;
+}
+
+.new_products_box {
+	width: 270px;
+	height: 320px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	background-color: white;
+}
+
+.text_top_products {
+	clear: both;
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color: #717171;
+	font-size: 22px; 
+	font-weight: 900;
+	font-style: italic;
+	text-align: left;
+	text-transform: uppercase;
+	margin-top: 31px;
+	margin-bottom: 31px;
+	margin-left: 25px;
+}
+
+.top_products {
+	width: 870px;
+	height: 400px;
+	margin-top: 101px;
+	background-color:  #f8f8f8;
+}
+
+.top_products_box {
+	width: 270px;
+	height: 320px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	background-color: white;
+}
+
+
+.sale_products {
+	margin-top: 50px;
+	width: 870px;
+	height: 400px;
+	background-color:  #f8f8f8;
+}
+
+.text_sale_products {
+	clear: both;
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color: #717171;
+	font-size: 24px; 
+	font-weight: 900;
+	font-style: italic;
+	text-align: left;
+	text-transform: uppercase;
+	margin-top: 31px;
+	margin-bottom: 31px;
+	margin-left: 25px;
+}
+
+.sale_products_box {
+	width: 270px;
+	height: 320px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	background-color: white;
+}
+
+.products_last {
+	margin-right: 0px;
+	background-color: white;
+}
+
+
+.img_products_box {
+	width: 250px;
+	height: 235px;
+	display: block;
+	margin: 10px 10px 24px 10px;
+	background-color:  #eaeaea;
+}
+
+.new_pr_box_text {
+	display: inline-block;
+	width: 140px;
+	height: 15px;
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color: #333333;
+	font-size: 14px; 
+	font-weight: 900;
+	font-style: italic;
+	line-height: 18.012px; 
+	text-align: left;
+	margin-left: 26px;
+}
+
+.new_pr_box_price {
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color:  #333333;
+	font-size: 18px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: right;
+	margin-left: 10px;
+}
+
+.new_pr_box_sale {
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color: #e24602;
+	font-size: 14px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: right;
+	text-decoration: line-through;
+	margin: 0px 22px 20px 186px;
+}
+
+.top_pr_box_text {
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color:  #333333;
+	font-size: 14px;
+	font-weight: 900;
+	font-style: italic;
+	line-height: 18.012px;
+	text-align: left;
+	text-transform: uppercase;
+	display: block;
+	float: left;
+	margin-left: 24px;
+	width: 135px;
+	height: 28px;
+}
+
+.top_pr_box_price {
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;	
+	color:  #333333;
+	font-size: 18px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: right;
+	display: block;
+	float: right;
+	margin-right: 14px;
+}
+
+.top_pr_box_sale {
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;	
+	color: rgba(254, 0, 0, 0.6);
+	font-size: 14px; 
+	font-weight: 900;
+	font-style: italic;
+	text-align: right;
+	text-decoration: line-through;
+	margin-right: 14px;
+	display: block;
+}
+
+.brand_img {
+	width: 127px;
+	height: 26px;
+	display: inline-block;
+	background-image: url(img/brand.jpg);
+	margin: 70px 8px 64px 7px;
+}
+
+/*Бокс инстаграмма*/
+.top_insta {
+	height: 102px;
+	width: 1170px;
+}
+
+
+/*Логотип в боксе инстаграма*/
+.insta_logo {
+	margin-top: 51px;
+	margin-left: 449px;
+	margin-bottom: 26px;
+}
+
+/*Текст в боксе инстаграма */
+.insta_text {
+	display: inline-block;
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color:  #333333;
+	font-size: 22px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: left;
+	margin-top: 54px;
+	margin-right: 437px;
+	float: right;
+}
+
+/*Хештэг в боксе инстраграмма*/
+.insta_text_mini {
+	font-family: 'Roboto-BlackItalic', 'arial', sans-serif;
+	color:  #333333;
+	font-size: 18px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: left;
+}
+
+.insta_photos {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon_fb {
+	display: block;
+	width: 390px;
+	height: 150px;
+	background-image: url(img/icon_fb.jpg);
+	float: left;
+}
+
+.icon_tw {
+	display: block;
+	width: 390px;
+	height: 150px;
+	background-image: url(img/icon_tw.jpg);
+	float: left;
+}
+
+.icon_pin {
+	display: block;
+	width: 390px;
+	height: 150px;
+	background-image: url(img/icon_pin.jpg);
+	float: left;
+}
+
+/*Оформление футера*/
+
+.category_text {
+	font-family: 'Raleway-ExtraBold', 'arial', sans-serif;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: left;
+	display: inline-block;
+	width: 80px;
+	height: 17px;
+	margin-bottom: 28px;
+	margin-top: 75px;
+}
+
+/*Список категории*/
+.category {
+	float: left;
+	width: 84px;
+	height: 117px;
+	margin-bottom: 64px;
+	margin-left: 192px;
+	list-style-type: none;
+}
+
+.category li a {
+	font-family: 'Roboto-Regular', 'arial', sans-serif;
+	color: #ffffff;
+	font-size: 12px; 
+	font-weight: 400;
+	line-height: 18px; 
+	text-align: left;
+	text-decoration: none;
+}
+
+/*Список Аккаунт*/
+.accaunt_text {
+	font-family: 'Raleway-ExtraBold', 'arial', sans-serif;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: left;
+	display: inline-block;
+	height: 17px;
+	margin-bottom: 28px;
+	margin-top: 75px;
+}
+
+.accaunt {
+	float: left;
+	width: 113px;
+	height: 117px;
+	margin-bottom: 64px;
+	margin-left: 114px;
+	list-style-type: none;
+}
+
+.accaunt li a {
+	font-family: 'Roboto-Regular', 'arial', sans-serif;
+	color: #ffffff;
+	font-size: 12px; 
+	font-weight: 400;
+	line-height: 18px; 
+	text-align: left;
+	text-decoration: none;
+}
+
+.pay_form {
+	float: left;
+	width: 267px;
+	height: 162px;
+	margin-top: 75px;
+	margin-left: 68px;
+}
+
+.newsletter{
+	font-family: 'Raleway-ExtraBold', 'arial', sans-serif;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+	text-align: left;
+	margin-left: 5px;
+}
+
+.join_text {
+	font-family: 'Roboto-Regular', 'arial', sans-serif;
+	color:  #f8f8f8;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 12px;
+	text-align: left;
+	margin-top: 8px;
+}
+
+input[type="email"] {
+	font-family: 'Roboto-Bold', 'Arial', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 21px;
+	padding-left: 10px;
+	width: 180px;
+	height: 30px;
+	background-color: yellow;
+	border: 0 none;
+	margin-top: 20px;
+}
+
+input[type="submit"] {
+	background-color: black;
+	color: white;
+	width: 71px;
+	height: 30px;
+	border: 0 none;
+}
+
+.imgs_pay {
+	width: 267px;
+	height: 22px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.img_pay_1 {
+	display: block;
+	width: 36px;
+	height: 22px;
+	background-image: url(img/pay_sistem/aex.jpg);
+	margin-bottom: 0px;
+	margin-top: 38px;
+}
+
+.img_pay_2 {
+	display: block;
+	width: 36px;
+	height: 22px;
+	background-image: url(img/pay_sistem/mastercard.jpg);
+	margin-bottom: 0px;
+	margin-top: 38px;
+}
+
+.img_pay_3 {
+	display: block;
+	width: 36px;
+	height: 22px;
+	background-image: url(img/pay_sistem/maestero.jpg);
+	margin-bottom: 0px;
+	margin-top: 38px;
+}
+
+.img_pay_4 {
+	display: block;
+	width: 36px;
+	height: 22px;
+	background-image: url(img/pay_sistem/paypal.jpg);
+	margin-bottom: 0px;
+	margin-top: 38px;
+}
+
+.img_pay_5 {
+	display: block;
+	width: 36px;
+	height: 22px;
+	background-image: url(img/pay_sistem/discover.jpg);
+	margin-bottom: 0px;
+	margin-top: 38px;
+}
+
+.img_pay_6 {
+	display: block;
+	width: 36px;
+	height: 22px;
+	background-image: url(img/pay_sistem/visa_straight.jpg);
+	margin-bottom: 0px;
+	margin-top: 38px;
+}
+
+/*Этот блок не лезет никак!*/
+.about_us {
+	float: left;
+	display: block;
+	width: 250px;
+	height: 157px;
+	margin-top: 76px;
+	margin-left: 46px;
+}
+
+.about_us_text {
+	font-family: 'Raleway-ExrtaBold', 'arial', sans-serif;
+	color: #ffffff;
+	font-size: 18px; 
+	font-weight: 700;
+	text-align: left;
+}
+
+.about_text_full {
+	font-family: 'Roboto-Regular', 'arial', sans-serif;
+	color: #ffffff;
+	font-size: 12px; 
+	font-weight: 400;
+	line-height: 12px; 
+	text-align: left;
+	margin-top: 7px;
+}
+
+.about_us table {
+	margin-top: 10px;
+}
+
+.about_us table th {
+	font-family: 'Roboto-Regular', 'arial', sans-serif;
+	color: #ffffff;
+	font-size: 14px; 
+	font-weight: 400;
+	line-height: 23.4px; 
+	text-align: left;
+}
+
+.about_us table td {
+	font-family: 'Roboto-Regular', 'arial', sans-serif;
+	font-size: 14px; 
+	font-weight: 400;
+	line-height: 20px; 
+	text-align: left;
+	padding-left: 18px;
+}
+
+.about_us table th, td {
+	color: white;
+}
+
+.email_out {
+	font-family: 'Roboto-Regular', 'arial', sans-serif;
+	color:  #faef03;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+/*12.07.2017 13:16 Last change */
+
+.footer_social {
+	float: left;
+	width: 100%;
+	height: 47px;
+	margin-top: 64px;
+}
+
+.footer_text {
+	display: inline-block;
+	margin: 20px 0px 14px 171px;
+	font-family: 'Roboto-Regular', 'arial', sans-serif;
+	font-style: normal;
+	color: #dad9d9;
+	font-size: 12px; 
+	font-weight: 400;
+	line-height: 21.6px;
+	text-align: left;
+}
+
+.footer_social_icon{
+	float: right;
+	width: 400px;
+}
+
+.footer_socail_icon_fb {
+	display: block;
+	float: left;
+	margin: 20px 15px 14px 3px;
+	width: 8px;
+	height: 16px;
+	background-image: url(img/header_icon/fb_icon.png);
+}
+
+.footer_socail_icon_tw {
+	display: block;
+	float: left;
+	margin: 20px 15px 14px 3px;
+	width: 16px;
+	height: 14px;
+	background-image: url(img/header_icon/tw_icon.png);
+}
+
+.footer_socail_icon_p {
+	display: block;
+	float: left;
+	margin: 20px 15px 14px 3px;
+	width: 14px;
+	height: 16px;
+	background-image: url(img/header_icon/pinterest_icon.png);
+}
+
+.footer_socail_icon_ggl {
+	display: block;
+	float: left;
+	width: 15px;
+	margin: 20px 15px 14px 3px;
+	height: 13px;
+	background-image: url(img/header_icon/google_icon.png);
+}
+
+.footer_socail_icon_tumblr {
+	display: block;
+	float: left;
+	margin: 20px 15px 14px 3px;
+	width: 10px;
+	height: 15px;
+	background-image: url(img/header_icon/tumblr_icon.png);
+}
+
+.footer_socail_icon_ins {
+	display: block;
+	float: left;
+	margin: 20px 15px 14px 3px;
+	width: 16px;
+	height: 16px;
+	background-image: url(img/header_icon/insta_icon.png);
+}
+
+.footer_socail_icon_rrs {
+	display: block;
+	float: left;
+	margin: 20px 186px 14px 3px;
+	width: 15px;
+	height: 15px;
+	background-image: url(img/header_icon/rss_icon.png);
+}
+
+
+/*Треугольники, работают только на 1 разрешении экрана*/
+.new_products .new {
+	position: absolute;
+	top: 769px;
+	right: 966px;
+	border: 23px solid transparent;
+	border-top: 23px solid #e24602;
+	border-right: 23px solid #e24602;
+}
+
+.new p {
+	position: absolute;
+	top: -13px;
+	right: -19px;
+	text-transform: uppercase;
+	font-size: 9px;
+	color: #fff;
+}
+
+
+.new_products .top {
+	position: absolute;
+	top: 769px;
+	right: 666px;
+	border: 23px solid transparent;
+	border-top: 23px solid #faef03;;
+	border-right: 23px solid #faef03;;
+}
+
+.top p {
+	position: absolute;
+	top: -13px;
+	right: -19px;
+	text-transform: uppercase;
+	font-size: 9px;
+	color: black;
+}
